@@ -8,6 +8,7 @@ import HomeGrid from "../components/home/HomeGrid";
 import Industries from "../components/home/Industries";
 import Divisions from "../components/home/Divisions";
 import HomeClients from "../components/home/HomeClients";
+import HomeContactForm from "../components/home/HomeContactForm";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <Industries />
       <Divisions />
       <HomeClients />
+      <HomeContactForm />
     </div>
   );
 };
