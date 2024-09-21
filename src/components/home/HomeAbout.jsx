@@ -10,7 +10,7 @@ const HomeAbout = () => {
               data-aos="fade-up"
               data-aos-delay="100"
               data-aos-duration="1000"
-              className="text-md md:text-lg text-[#04cafb] uppercase"
+              className="text-md md:text-lg text-[#04cafb] uppercase mt-5 md:mt-0"
             >
               Who we are
             </p>
