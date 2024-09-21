@@ -5,11 +5,11 @@ const FeaturedServices = () => {
     <div className="w-full px-5 py-[20px] md:py-[80px] lg:py-[100px]">
       <div className="max-w-screen-xl mx-auto">
         <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-12">
-          <div className="p-0 md:p-3">
+          <div className="p-0 md:p-3 text-center md:text-start">
             <img
               src="/images/award.png"
               alt="award.png"
-              className="size-20"
+              className="size-20 mx-auto md:mx-0"
               data-aos="fade-up"
               data-aos-delay="100"
               data-aos-duration="1000"
@@ -34,11 +34,11 @@ const FeaturedServices = () => {
               asperiores nam sunt quia corporis molestias aspernatur!
             </p>
           </div>
-          <div className="p-0 md:p-3">
+          <div className="p-0 md:p-3 text-center md:text-start">
             <img
               src="/images/power.png"
               alt="power.png"
-              className="size-20"
+              className="size-20 mx-auto md:mx-0"
               data-aos="fade-up"
               data-aos-delay="100"
               data-aos-duration="1000"
@@ -63,11 +63,11 @@ const FeaturedServices = () => {
               asperiores nam sunt quia corporis molestias aspernatur!
             </p>
           </div>
-          <div className="p-0 md:p-3">
+          <div className="p-0 md:p-3 text-center md:text-start">
             <img
               src="/images/responsibility.png"
               alt="responsibility.png"
-              className="size-20"
+              className="size-20 mx-auto md:mx-0"
               data-aos="fade-up"
               data-aos-delay="100"
               data-aos-duration="1000"
