@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="w-full px-5 py-2 bg-[url('/images/hero-bg.png')] bg-no-repeat bg-cover bg-bottom h-[40vh] md:h-[95vh] overflow-hidden">
+    <div className="w-full px-5 py-2 bg-[url('/images/hero-bg.png')] bg-no-repeat bg-cover bg-bottom h-[100vh] md:h-[95vh] overflow-hidden">
       <div className="max-w-screen-xl mx-auto h-full flex justify-center items-center">
         <div className="w-full text-center">
           <p className="text-white uppercase text-sm md:text-[26px] mb-0 md:mb-12 animate__animated animate__fadeInUp">
