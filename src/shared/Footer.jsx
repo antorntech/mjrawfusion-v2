@@ -17,7 +17,7 @@ const Footer = () => {
               </p>
               <Link to="/">
                 <button className="px-4 py-3 text-[16px] bg-gradient-to-l from-[#04cafb] to-[#039dda] text-white rounded-md shadow-lg">
-                  Manage My Booking
+                  Get In Touch
                 </button>
               </Link>
             </div>
@@ -77,8 +77,8 @@ const Footer = () => {
       </div>
       <div className="bg-gradient-to-l from-[#04cafb] to-[#039dda]">
         <p className="text-white text-sm text-center p-5">
-          © Queen Car Rental - {year} | All Right Reserved | Developed With BY{" "}
-          <i class="fa fa-heart"></i> ANTOR & SANTO
+          © MJRAWFUSION - {year} | All Right Reserved | Developed BY{" "}
+          <i class="fa fa-heart"></i> PEOPLENTECH
         </p>
       </div>
     </>
