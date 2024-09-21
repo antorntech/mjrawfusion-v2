@@ -5,6 +5,9 @@ import HomeAbout from "../components/home/HomeAbout";
 import HomeServices from "../components/home/HomeServices";
 import DiscoverMore from "../components/home/DiscoverMore";
 import HomeGrid from "../components/home/HomeGrid";
+import Industries from "../components/home/Industries";
+import Divisions from "../components/home/Divisions";
+import HomeClients from "../components/home/HomeClients";
 
 const Home = () => {
   return (
@@ -15,6 +18,9 @@ const Home = () => {
       <HomeServices />
       <DiscoverMore />
       <HomeGrid />
+      <Industries />
+      <Divisions />
+      <HomeClients />
     </div>
   );
 };

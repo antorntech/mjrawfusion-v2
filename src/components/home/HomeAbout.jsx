@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeAbout = () => {
   return (
-    <div className="px-5 py-[20px] md:py-[80px] lg:py-[100px]">
+    <div className="px-5 pb-[20px] md:pb-[80px] lg:pb-[100px]">
       <div className="max-w-screen-xl mx-auto">
         <div className="flex flex-col md:flex-row items-center">
           <div className="w-full md:w1/2 order-2 md:order-1">

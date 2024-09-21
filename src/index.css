@@ -19,94 +19,6 @@ body {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-/* Custom styles for the DatePicker */
-.react-datepicker-wrapper {
-  width: 100%;
-}
-
-.react-datepicker {
-  font-family: "Arial", sans-serif;
-  background-color: #f0f0f0; /* Light background */
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-}
-
-.react-datepicker__header {
-  background-color: #fbbb04; /* Custom header color */
-  border-bottom: none;
-}
-
-.react-datepicker__current-month,
-.react-datepicker__day-name {
-  color: #ffffff; /* White text in the header */
-  font-weight: bold;
-}
-
-.react-datepicker__day {
-  color: #333; /* Darker color for dates */
-  padding: 0.5rem;
-  border-radius: 50%;
-}
-
-.react-datepicker__day:hover {
-  background-color: #fbbb04;
-  color: white;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.react-datepicker__day--today {
-  background-color: #f8e9d7;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.react-datepicker__day--selected {
-  background-color: #fbbb04; /* Selected date */
-  color: white;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.react-datepicker__time-container {
-  background-color: #f0f0f0;
-  border-left: 1px solid #ccc;
-}
-
-.react-datepicker__time-list-item--selected {
-  background-color: #fbbb04;
-  color: white;
-}
-
-.react-datepicker__navigation--previous,
-.react-datepicker__navigation--next {
-  top: 2px;
-  border: none;
-  background-color: transparent;
-}
-
-.react-datepicker__triangle {
-  display: none; /* Hide the triangle */
-}
-
-.react-datepicker__day--keyboard-selected {
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.react-datepicker-time__header {
-  color: #fff;
-  padding: 10px 0;
-}
-
-.our-fleets {
-  position: relative;
-  padding: 100px 0;
-}
-
 .next-arrow {
   top: 35%;
   right: 8px;
@@ -183,49 +95,7 @@ body {
   background-color: #000000b7;
 }
 
-.works-card1 {
-  clip-path: polygon(
-    0% 0%,
-    100% 0%,
-    100% 87%,
-    89% 87%,
-    79% 100%,
-    68% 87%,
-    0 87%
-  );
-}
-
-.works-card2 {
-  clip-path: polygon(
-    89% 13%,
-    100% 13%,
-    100% 100%,
-    0 100%,
-    0 13%,
-    63% 13%,
-    76% 0
-  );
-}
-
-.review-card {
-  color: #5a5a5a;
-  background-color: #dfdfdf;
-  clip-path: polygon(
-    0% 0%,
-    100% 0%,
-    100% 85%,
-    75% 86%,
-    75% 100%,
-    54% 86%,
-    0 86%
-  );
-}
-
 @media screen and (max-width: 768px) {
-  .our-fleets {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
   .next-arrow {
     top: 30%;
   }
@@ -244,4 +114,55 @@ body {
     top: 40%;
     right: 55px;
   }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.client-logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: transparent;
+  white-space: nowrap;
+  position: relative;
+}
+
+.client-logos:before,
+.client-logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.client-logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff);
+}
+
+.client-logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
+}
+
+.client-logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 3s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 80px;
+  margin: 0 40px;
 }
