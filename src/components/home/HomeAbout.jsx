@@ -37,7 +37,7 @@ const HomeAbout = () => {
               <div className="w-full absolute -bottom-5 left-0 md:-bottom-8 md:left-24 z-50">
                 <div
                   data-aos="fade-in"
-                  data-aos-delay="700"
+                  data-aos-delay="600"
                   data-aos-duration="1000"
                   className="w-full flex items-center justify-center gap-3 md:gap-12 my-5 custom-shadow bg-white p-5 rounded-md"
                 >

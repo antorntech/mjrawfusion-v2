@@ -54,62 +54,64 @@ const Header = () => {
   return (
     <div className="w-full px-5 py-2 overflow-hidden">
       {/* desktop menu */}
-      <div className="max-w-screen-xl mx-auto hidden lg:flex justify-between items-center">
-        <div className="flex items-center gap-8">
-          {menuLeft.map((item, index) => {
-            return (
-              <NavLink
-                key={index}
-                to={item.path}
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-[#04cafb] text-[16px] font-semibold transition duration-300"
-                    : "text-black text-[16px] font-[500] hover:text-[#04cafb] transition duration-300"
-                }
-              >
-                {item.label}
-              </NavLink>
-            );
-          })}
-        </div>
-        <div>
-          <Link to="/">
-            <img
-              src="/images/logo-dark.png"
-              alt="logo-dark.png"
-              width={250}
-              className="py-1"
-            />
-          </Link>
-        </div>
-        <div className="flex items-center gap-8">
-          {menuRight.map((item, index) => {
-            return (
-              <NavLink
-                key={index}
-                to={item.path}
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-[#04cafb] text-[16px] font-semibold transition duration-300"
-                    : "text-black text-[16px] font-[500] hover:text-[#04cafb] transition duration-300"
-                }
-              >
-                {item.label}
-              </NavLink>
-            );
-          })}
-          <Link
-            to="/contactus"
-            className="inline-block px-5 py-2 bg-gradient-to-l from-[#04cafb] to-[#039dda] text-white rounded-md shadow-lg"
-          >
-            Get In Touch
-          </Link>
+      <div className="w-full hidden md:block fixed top-0 left-0 z-50 bg-white shadow-md px-5 py-2">
+        <div className="max-w-screen-xl mx-auto lg:flex justify-between items-center">
+          <div className="flex items-center gap-8">
+            {menuLeft.map((item, index) => {
+              return (
+                <NavLink
+                  key={index}
+                  to={item.path}
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-[#04cafb] text-[16px] font-semibold transition duration-300"
+                      : "text-black text-[16px] font-[500] hover:text-[#04cafb] transition duration-300"
+                  }
+                >
+                  {item.label}
+                </NavLink>
+              );
+            })}
+          </div>
+          <div>
+            <Link to="/">
+              <img
+                src="/images/logo-dark.png"
+                alt="logo-dark.png"
+                width={250}
+                className="py-1"
+              />
+            </Link>
+          </div>
+          <div className="flex items-center gap-8">
+            {menuRight.map((item, index) => {
+              return (
+                <NavLink
+                  key={index}
+                  to={item.path}
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-[#04cafb] text-[16px] font-semibold transition duration-300"
+                      : "text-black text-[16px] font-[500] hover:text-[#04cafb] transition duration-300"
+                  }
+                >
+                  {item.label}
+                </NavLink>
+              );
+            })}
+            <Link
+              to="/contactus"
+              className="inline-block px-5 py-2 bg-gradient-to-l from-[#04cafb] to-[#039dda] text-white rounded-md shadow-lg"
+            >
+              Get In Touch
+            </Link>
+          </div>
         </div>
       </div>
 
       {/* mobile menu */}
-      <div>
-        <div className="py-1 flex items-center justify-between lg:hidden">
+      <div className="w-full md:hidden fixed top-0 left-0 z-50 bg-white shadow-md">
+        <div className="p-3 flex items-center justify-between lg:hidden">
           <div className="border-2 border-[#04cafb] px-2 rounded-md">
             <i
               className={`fa-solid transition-all ease-out duration-500 mt-1 ${
@@ -139,8 +141,8 @@ const Header = () => {
 
         {/* Mobile menu container with transition */}
         <div
-          className={`flex flex-col gap-2 overflow-hidden transition-all duration-500 ease-in-out ${
-            menuOpen ? "max-h-[500px] py-3" : "max-h-0"
+          className={`flex flex-col gap-2 px-3 overflow-hidden transition-all duration-500 ease-in-out ${
+            menuOpen ? "max-h-[500px] pb-3" : "max-h-0"
           }`}
         >
           {mainMenu.map((item, index) => {

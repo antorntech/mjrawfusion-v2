@@ -10,16 +10,25 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div>
               <img src="/images/logo-light.png" alt="" width={250} />
-              <p className="text-white mt-5 mb-8">
+              <p className="text-white my-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
                 asperiores, adipisci voluptas perferendis voluptatum illum vero,
                 placeat voluptate delectus a qui numquam.
               </p>
-              <Link to="/">
-                <button className="px-4 py-3 text-[16px] bg-gradient-to-l from-[#04cafb] to-[#039dda] text-white rounded-md shadow-lg">
-                  Get In Touch
-                </button>
-              </Link>
+              <div className="flex items-center gap-3">
+                <Link className="border-2 border-white rounded-md w-10 h-10 flex justify-center items-center hover:border-[#04cafb] hover:bg-gradient-to-l hover:from-[#04cafb] hover:to-[#039dda] transition-all duration-500">
+                  <i class="fa-brands fa-facebook-f text-white text-lg"></i>
+                </Link>
+                <Link className="border-2 border-white rounded-md w-10 h-10 flex justify-center items-center hover:border-[#04cafb] hover:bg-gradient-to-l hover:from-[#04cafb] hover:to-[#039dda] transition-all duration-500">
+                  <i class="fa-brands fa-linkedin-in text-white text-lg"></i>
+                </Link>
+                <Link className="border-2 border-white rounded-md w-10 h-10 flex justify-center items-center hover:border-[#04cafb] hover:bg-gradient-to-l hover:from-[#04cafb] hover:to-[#039dda] transition-all duration-500">
+                  <i class="fa-brands fa-youtube text-white text-lg"></i>
+                </Link>
+                <Link className="border-2 border-white rounded-md w-10 h-10 flex justify-center items-center hover:border-[#04cafb] hover:bg-gradient-to-l hover:from-[#04cafb] hover:to-[#039dda] transition-all duration-500">
+                  <i class="fa-brands fa-x-twitter text-white text-lg"></i>
+                </Link>
+              </div>
             </div>
             <div>
               <div>
@@ -29,12 +38,18 @@ const Footer = () => {
               <ul className="mt-5 flex flex-col gap-4">
                 <li className="flex items-center gap-3">
                   <div className="w-5 h-[1px] bg-white"></div>
-                  <span className="text-white">+880 1234 567 890</span>
+                  <span className="text-white">
+                    +88-01601-900949 / +88-01920-810804
+                  </span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <div className="w-5 h-[1px] bg-white"></div>
+                  <span className="text-white">mj.rawfusion@gmail.com</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="w-5 h-[1px] bg-white"></div>
                   <span className="text-white">
-                    Panthapath, Dhaka, Bangladesh
+                    158/1, Rayerbazar, Hazaribagh, Dhaka-1209 Bangladesh
                   </span>
                 </li>
                 <li className="flex items-center gap-3">
@@ -77,8 +92,8 @@ const Footer = () => {
       </div>
       <div className="bg-gradient-to-l from-[#04cafb] to-[#039dda]">
         <p className="text-white text-sm text-center p-5">
-          © MJRAWFUSION - {year} | All Right Reserved | Developed BY{" "}
-          <i class="fa fa-heart"></i> PEOPLENTECH
+          Copyright © {year} mjrawfusion.com – All Rights Reserved | Designed
+          and Developed By <i class="fa fa-heart"></i> PeopleNtech
         </p>
       </div>
     </>

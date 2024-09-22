@@ -1,29 +1,31 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
-const PageHeader = ({ title, subtitle, banner }) => {
+const PageHeader = ({ title }) => {
+  const location = useLocation();
   return (
     <div
-      className="w-full h-[25vh] md:[40vh] lg:h-[70vh] flex justify-center items-center"
+      className="w-full mt-10 h-[25vh] md:h-[40vh] flex justify-center items-center"
       style={{
-        backgroundImage: `url(${banner})`,
+        backgroundImage: `url('/images/pageheader-bg.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
       <div className="w-full h-full flex flex-col items-center justify-center">
-        {subtitle ? (
-          <p className="mb-2 text-center text-white text-md lg:text-3xl font-bold animate__animated animate__fadeInUp">
-            {subtitle}
-          </p>
-        ) : null}
-        <h1 className="text-white text-4xl lg:text-8xl font-bold animate__animated animate__fadeInUp">
+        <h1 className="text-white text-4xl lg:text-6xl font-bold animate__animated animate__fadeInUp">
           {title}
         </h1>
-        <img
-          className="w-1/3 animate__animated animate__fadeInUp"
-          src="/images/underline.png"
-          alt=""
-        />
+        <div className="animate__animated animate__fadeInUp">
+          <Link to="/" className="text-white text-lg">
+            Home
+          </Link>
+          <span className="text-gray-500 capitalize">
+            {" "}
+            <i class="fa-solid fa-angles-right text-white"></i>{" "}
+            {location.pathname.split("/").pop()}
+          </span>
+        </div>
       </div>
     </div>
   );

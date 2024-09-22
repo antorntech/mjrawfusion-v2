@@ -20,7 +20,7 @@ const HomeContactForm = () => {
           LEAVE US A MESSAGE
         </p>
       </div>
-      <div className="max-w-screen-xl mx-auto mt-5 md:mt-8 lg:mt-12">
+      <div className="max-w-screen-xl mx-auto mt-5 md:mt-8">
         <div className="custom-shadow rounded-md p-2 md:p-5">
           <p className="text-md md:text-xl w-full md:w-3/4 text-center mx-auto mt-2">
             Have a question, need assistance, or simply want to share your Malta
