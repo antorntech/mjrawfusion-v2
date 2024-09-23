@@ -5,6 +5,7 @@ const ContactForm = () => {
     name: "",
     mobile: "",
     email: "",
+    subject: "",
     message: "",
   });
 
@@ -36,6 +37,7 @@ const ContactForm = () => {
         name: "",
         mobile: "",
         email: "",
+        subject: "",
         message: "",
       });
       setErrors({});
@@ -47,7 +49,7 @@ const ContactForm = () => {
       data-aos="fade-up"
       data-aos-delay="100"
       data-aos-duration="1000"
-      className="max-w-4xl mx-auto pb-5"
+      className="w-full md:max-w-4xl mx-auto pb-5"
     >
       <form
         onSubmit={handleSubmit}
@@ -122,12 +124,29 @@ const ContactForm = () => {
         <div>
           <label
             className="block text-gray-700 font-medium mb-2"
+            htmlFor="subject"
+          >
+            Subject
+          </label>
+          <input
+            rows="1"
+            id="subject"
+            value={formData.subject}
+            onChange={handleInputChange}
+            placeholder="Enter Your Subject"
+            className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
+          />
+        </div>
+
+        <div className="col-span-1 md:col-span-2">
+          <label
+            className="block text-gray-700 font-medium mb-2"
             htmlFor="message"
           >
             Message
           </label>
           <textarea
-            rows="1"
+            rows="3"
             id="message"
             value={formData.message}
             onChange={handleInputChange}
