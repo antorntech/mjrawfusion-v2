@@ -2,7 +2,7 @@ import React from "react";
 
 const MissionVision = () => {
   return (
-    <div className="pt-[50px]">
+    <div className="px-5 md:px-0 pt-[20px] md:pt-[50px]">
       <div className="max-w-screen-xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           <div
