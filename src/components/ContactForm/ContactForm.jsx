@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -31,7 +32,7 @@ const ContactForm = () => {
       setErrors(validationErrors);
     } else {
       console.log("Form submitted:", formData);
-      alert("Form submitted successfully!");
+      toast.success("Form submitted successfully!");
 
       setFormData({
         name: "",

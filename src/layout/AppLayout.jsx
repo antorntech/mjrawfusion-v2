@@ -5,6 +5,8 @@ import Loader from "../loaders/Loader";
 import GoToTop from "../components/GoToTop/GoToTop";
 import Footer from "../shared/Footer";
 import ScrlTopOfPage from "../components/ScrlTopOfPage/ScrlTopOfPage";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const AppLayout = () => {
   const [isLoading, setIsLoading] = React.useState(true);
@@ -25,6 +27,7 @@ const AppLayout = () => {
           <main>
             <ScrlTopOfPage />
             <AppRoutes />
+            <ToastContainer />
           </main>
           <Footer />
         </div>
