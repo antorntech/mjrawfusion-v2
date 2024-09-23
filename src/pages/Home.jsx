@@ -5,10 +5,10 @@ import HomeAbout from "../components/home/HomeAbout";
 import HomeServices from "../components/home/HomeServices";
 import DiscoverMore from "../components/home/DiscoverMore";
 import HomeGrid from "../components/home/HomeGrid";
-import Industries from "../components/home/Industries";
-import Divisions from "../components/home/Divisions";
 import HomeClients from "../components/home/HomeClients";
 import HomeContactForm from "../components/home/HomeContactForm";
+import HomeIndustries from "../components/home/HomeIndustries";
+import HomeDivisions from "../components/home/HomeDivisions";
 
 const Home = () => {
   return (
@@ -19,8 +19,8 @@ const Home = () => {
       <HomeServices />
       <DiscoverMore />
       <HomeGrid />
-      <Industries />
-      <Divisions />
+      <HomeIndustries />
+      <HomeDivisions />
       <HomeClients />
       <HomeContactForm />
     </div>

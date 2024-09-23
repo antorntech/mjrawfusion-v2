@@ -1,31 +1,21 @@
 import React from "react";
 
-const Divisions = () => {
-  const divisions = [
+const HomeIndustries = () => {
+  const industries = [
     {
       id: 1,
-      title: "Process and Packaging Machinery Division",
-      image: "/images/machine.jpg",
+      title: "PHARMA INDUSTRIES",
+      image: "/images/pharma.jpg",
     },
     {
       id: 2,
-      title: "Laboratory Instrument Division",
-      image: "/images/lab-div.jpg",
+      title: "FOOD INDUSTRIES",
+      image: "/images/food.jpg",
     },
     {
       id: 3,
-      title: "Raw Materials(Pharma) Division",
-      image: "/images/raw-mat.jpg",
-    },
-    {
-      id: 4,
-      title: "Industrial Flooring Division",
-      image: "/images/flooring.jpg",
-    },
-    {
-      id: 5,
-      title: "Packaging Materials Division",
-      image: "/images/pack.jpg",
+      title: "COSMETIC INDUSTRIES",
+      image: "/images/cosmetic.jpg",
     },
   ];
   return (
@@ -38,7 +28,7 @@ const Divisions = () => {
           className="mb-5 md:mb-12"
         >
           <h2 className="text-2xl md:text-4xl font-bold text-center mb-2 uppercase">
-            Divisions
+            Industries
           </h2>
           <div className="flex items-center justify-center">
             <div className="w-[60px] h-[1px] bg-gray-300"></div>
@@ -53,24 +43,24 @@ const Divisions = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-8">
-          {divisions.map((division) => (
+          {industries.map((industry) => (
             <div
               data-aos="fade-up"
               data-aos-delay="100"
               data-aos-duration="1000"
-              key={division.id}
+              key={industry.id}
               className="p-2 md:p-5 bg-white rounded-xl border-2 border-gray-200 hover:border-[#04cafb] hover:shadow-xl transition-all duration-500"
             >
               <div className="group">
                 <div className="w-full overflow-hidden">
                   <img
-                    src={division.image}
+                    src={industry.image}
                     alt=""
                     className="w-full group-hover:scale-125 group-hover:rotate-6 transition-all duration-500"
                   />
                 </div>
                 <h3 className="text-lg md:text-xl font-bold mt-3">
-                  {division.title}
+                  {industry.title}
                 </h3>
               </div>
             </div>
@@ -81,4 +71,4 @@ const Divisions = () => {
   );
 };
 
-export default Divisions;
+export default HomeIndustries;
