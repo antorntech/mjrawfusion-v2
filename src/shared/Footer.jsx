@@ -93,7 +93,7 @@ const Footer = () => {
       <div className="bg-gradient-to-l from-[#04cafb] to-[#039dda]">
         <p className="text-white text-sm text-center p-5">
           Copyright © {year} mjrawfusion.com – All Rights Reserved | Designed
-          and Developed By <i class="fa fa-heart"></i> PeopleNtech
+          and Developed By <i class="fa fa-heart"></i> PeopleNTech
         </p>
       </div>
     </>
