@@ -78,7 +78,7 @@ const Header = () => {
               <img
                 src="/images/logo-dark.png"
                 alt="logo-dark.png"
-                width={250}
+                width={150}
                 className="py-1"
               />
             </Link>

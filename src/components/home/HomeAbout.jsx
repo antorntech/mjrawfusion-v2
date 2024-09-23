@@ -34,7 +34,7 @@ const HomeAbout = () => {
               vulputate suspendisse blandit.
             </p>
             <div className="w-full relative">
-              <div className="w-full absolute -bottom-5 left-0 md:-bottom-8 md:left-24 z-50">
+              <div className="w-full absolute -bottom-5 left-0 md:-bottom-8 md:left-24 z-40">
                 <div
                   data-aos="fade-in"
                   data-aos-delay="600"
