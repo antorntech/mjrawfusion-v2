@@ -54,13 +54,19 @@ const Footer = () => {
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="w-5 h-[1px] bg-white"></div>
-                  <Link to="/" className="text-white">
+                  <Link
+                    to="/privacypolicy"
+                    className="text-white hover:text-[#04cafb] transition-all duration-500"
+                  >
                     Privacy and Policy
                   </Link>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="w-5 h-[1px] bg-white"></div>
-                  <Link to="/" className="text-white">
+                  <Link
+                    to="/termscondition"
+                    className="text-white hover:text-[#04cafb] transition-all duration-500"
+                  >
                     Terms and Conditions
                   </Link>
                 </li>
