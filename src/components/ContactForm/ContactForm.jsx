@@ -121,7 +121,7 @@ const ContactForm = () => {
         <div className="col-span-1 md:col-span-2 text-center">
           <button
             type="submit"
-            className="px-5 py-2 bg-gradient-to-l from-[#04cafb] to-[#039dda] text-white rounded-md shadow-lg"
+            className="px-5 py-2 md:py-3 bg-gradient-to-l from-[#04cafb] to-[#039dda] text-white rounded-md shadow-lg"
           >
             Send Message
           </button>
