@@ -5,11 +5,11 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <>
-      <div className="bg-black px-5 py-12">
+      <div className="bg-black px-5 py-5 md:py-12">
         <div className="max-w-screen-xl mx-auto py-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div>
-              <img src="/images/logo-light.png" alt="" width={250} />
+            <div className="w-full flex flex-col items-center md:items-start">
+              <img src="/images/logo-light.png" alt="" width={200} />
               <p className="text-white my-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
                 asperiores, adipisci voluptas perferendis voluptatum illum vero,

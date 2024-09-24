@@ -125,7 +125,7 @@ const Header = () => {
               <img
                 src="/images/logo-dark.png"
                 alt="logo-dark.png"
-                className="h-6"
+                className="h-12"
               />
             </Link>
           </div>

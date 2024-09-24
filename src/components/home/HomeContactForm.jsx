@@ -15,7 +15,7 @@ const HomeContactForm = () => {
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="text-3xl md:text-5xl font-bold bg-white bg-gradient-to-r from-[#04cafb] via-[#039dda] to-[#039dda] inline-block text-transparent bg-clip-text"
+          className="text-2xl md:text-5xl font-bold bg-white bg-gradient-to-r from-[#04cafb] via-[#039dda] to-[#039dda] inline-block text-transparent bg-clip-text"
         >
           LEAVE US A MESSAGE
         </p>
