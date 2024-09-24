@@ -1,8 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Footer = () => {
   const year = new Date().getFullYear();
+  const [email, setEmail] = React.useState("");
+
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    if (!email) {
+      toast.error("Please enter your email address");
+      return;
+    }
+    toast.success("Thank you for subscribing to our newsletter!", {
+      autoClose: 1000,
+    });
+    setEmail("");
+  };
   return (
     <>
       <div className="bg-black px-5 py-5 md:py-12">
@@ -85,10 +99,15 @@ const Footer = () => {
                 <input
                   type="email"
                   name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
                   className="w-full p-2 border-[3px] border-[#04cafb] focus:outline-none focus:ring-[3px] focus:ring-transparent focus:border-[3px]"
                 />
-                <button className="mt-3 uppercase px-4 py-3 text-[16px] bg-gradient-to-l from-[#04cafb] to-[#039dda] text-white w-full shadow-lg">
+                <button
+                  onClick={handleSubscribe}
+                  className="mt-3 uppercase px-4 py-3 text-[16px] bg-gradient-to-l from-[#04cafb] to-[#039dda] text-white w-full shadow-lg"
+                >
                   Subscribe
                 </button>
               </div>
